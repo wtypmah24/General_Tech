@@ -1,0 +1,37 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2639
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\froman\fcharset0 Times-Roman;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;}
+{\*\expandedcolortbl;;\cssrgb\c0\c0\c0;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww28300\viewh14600\viewkind0
+\deftab720
+\pard\pardeftab720\sa0\partightenfactor0
+
+\f0\fs24 \cf0 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 -- 3. \uc0\u1080 \u1079  \u1090 \u1072 \u1073 \u1083 \u1080 \u1094 \u1099  Employees \u1074 \u1099 \u1074 \u1077 \u1089 \u1090 \u1080  \u1074 \u1089 \u1077 \u1093  \u1089 \u1086 \u1090 \u1088 \u1091 \u1076 \u1085 \u1080 \u1082 \u1086 \u1074  \u1089  job_id FI_ACCOUNT\
+SELECT * FROM Employees\'a0WHERE job_id = 'FI_ACCOUNT';\
+\'a0\
+-- 4. \uc0\u1074 \u1099 \u1074 \u1077 \u1089 \u1090 \u1080  \u1074 \u1089 \u1077 \u1093  \u1089 \u1086 \u1090 \u1088 \u1091 \u1076 \u1085 \u1080 \u1082 \u1086 \u1074 , \u1082 \u1086 \u1090 \u1086 \u1088 \u1099 \u1077  \u1079 \u1072 \u1088 \u1072 \u1073 \u1072 \u1090 \u1099 \u1074 \u1072 \u1102 \u1090  \u1084 \u1077 \u1085 \u1100 \u1096 \u1077  12000\
+SELECT * FROM Employees\'a0WHERE salary < 12000;\
+\'a0\
+-- 5. \uc0\u1074 \u1099 \u1074 \u1077 \u1089 \u1090 \u1080  \u1089 \u1086 \u1090 \u1088 \u1091 \u1076 \u1085 \u1080 \u1082 \u1086 \u1074  \u1080 \u1079  \u1076 \u1077 \u1087 \u1072 \u1088 \u1090 \u1072 \u1084 \u1077 \u1085 \u1090 \u1086 \u1074  70, 80, 100\
+SELECT * FROM Employees\'a0WHERE department_id IN (70, 80, 90);\
+\'a0\
+-- 6. \uc0\u1074 \u1099 \u1074 \u1077 \u1089 \u1090 \u1080  \u1074 \u1089 \u1077 \u1093  \u1089 \u1086 \u1090 \u1088 \u1091 \u1076 \u1085 \u1080 \u1082 \u1086 \u1074 , \u1091  \u1082 \u1086 \u1090 \u1086 \u1088 \u1099 \u1093  \u1080 \u1084 \u1103  \u1085 \u1072 \u1095 \u1080 \u1085 \u1072 \u1077 \u1090 \u1089 \u1103  \u1085 \u1072  D\
+SELECT * FROM Employees\'a0WHERE first_name LIKE 'D%';\
+\'a0\
+-- 7. \uc0\u1074 \u1099 \u1074 \u1077 \u1089 \u1090 \u1080  \u1089 \u1086 \u1090 \u1088 \u1091 \u1076 \u1085 \u1080 \u1082 \u1086 \u1074 , \u1091  \u1082 \u1086 \u1090 \u1086 \u1088 \u1099 \u1093  employee_id \u1086 \u1090  108 \u1076 \u1086  143\
+\'a0\
+SELECT * FROM Employees\'a0WHERE employee_id BETWEEN 108 AND 143;\
+\'a0\
+-- 8. \uc0\u1074 \u1099 \u1074 \u1077 \u1089 \u1090 \u1080  \u1080 \u1084 \u1103  \u1080  \u1092 \u1072 \u1084 \u1080 \u1083 \u1080 \u1102  \u1090 \u1077 \u1093  \u1089 \u1086 \u1090 \u1088 \u1091 \u1076 \u1085 \u1080 \u1082 \u1086 \u1074 , \u1091  \u1082 \u1086 \u1090 \u1086 \u1088 \u1099 \u1093  \u1085 \u1086 \u1084 \u1077 \u1088  \u1090 \u1077 \u1083 \u1077 \u1092 \u1086 \u1085 \u1072  \u1085 \u1072 \u1095 \u1080 \u1085 \u1072 \u1077 \u1090 \u1089 \u1103  \u1089  590\
+\'a0\
+SELECT * FROM EmployeesWHERE phone_NUMERIC LIKE '590%';\
+\'a0\
+-- 9. \uc0\u1074 \u1099 \u1074 \u1077 \u1089 \u1090 \u1080  \u1089 \u1086 \u1090 \u1088 \u1091 \u1076 \u1085 \u1080 \u1082 \u1086 \u1074 , \u1091  \u1082 \u1086 \u1090 \u1086 \u1088 \u1099 \u1093  \u1079 \u1072 \u1088 \u1087 \u1083 \u1072 \u1090 \u1072  \u1073 \u1086 \u1083 \u1100 \u1096 \u1077  1000, job_id \u1088 \u1072 \u1074 \u1085 \u1086  IT_PROG \u1080  \u1085 \u1086 \u1084 \u1077 \u1088  -- \u1090 \u1077 \u1083 \u1077 \u1092 \u1086 \u1085 \u1072  \u1085 \u1072 \u1095 \u1080 \u1085 \u1072 \u1077 \u1090 \u1089 \u1103  \u1089  590\
+\'a0\
+SELECT * FROM Employees\'a0WHERE salary > 1000 and job_id LIKE 'IT_PROG' and phone_NUMERIC LIKE '590%';\
+\'a0\
+-- 10. \uc0\u1074 \u1099 \u1074 \u1077 \u1089 \u1090 \u1080  \u1080 \u1084 \u1103 , \u1092 \u1072 \u1084 \u1080 \u1083 \u1080 \u1102  \u1080  \u1079 \u1072 \u1088 \u1087 \u1083 \u1072 \u1090 \u1091  \u1090 \u1077 \u1093  \u1089 \u1086 \u1090 \u1088 \u1091 \u1076 \u1085 \u1080 \u1082 \u1086 \u1074 , \u1091  \u1082 \u1086 \u1090 \u1086 \u1088 \u1099 \u1093  \u1079 \u1072 \u1088 \u1087 \u1083 \u1072 \u1090 \u1072  \u1074  \u1080 \u1085 \u1090 \u1077 \u1088 \u1074 \u1072 \u1083 \u1077  [8000; -- 10000] \u1080  \u1091  \u1085 \u1080 \u1093  commission_pct \u1085 \u1077  null\
+\'a0\
+SELECT first_name, last_name FROM Employees\'a0WHERE salary BETWEEN 8000 AND 10000 AND commission_pct IS NOT NULL;\
+}
